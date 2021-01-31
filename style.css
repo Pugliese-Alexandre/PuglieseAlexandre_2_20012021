@@ -1,6 +1,17 @@
+/************** Font **************/
+
+@font-face {
+	font-family: 'ralewayregular';
+	src: url('public/font/raleway-regular.woff2') format('woff2'),
+	url('public/font/raleway-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
-	margin:0;
-	padding: 0;
+	font-family: 'ralewayregular';
+	margin: 15px;
+	padding: 15px;
 }
 
 /************** Grid **************/
@@ -8,61 +19,59 @@ body {
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-	grid-template-rows: 75px 200px 400px 300px 200px;
+	grid-template-rows: 75px 300px 400px 300px 300px;
 }
 /************** Grid Logo **************/
 
 .gridlogo {
 	grid-column-start: 1;
-	background-color: #000000;
 	border : solid 1px #ffffff;
-	color: #ffffff;
+	color: #000000;
 }
 
 /************** Grid Navigation **************/
 
 .gridnav {
 	grid-column: 2 / span 5;
-	background-color: #ff9933;
 	border : solid 1px #ffffff;
-	color: #ffffff;
+	color: #000000;
 }
 
 /********** Grid texte **********/
 
 .gridtext {
 	grid-column: 1 / span 5;
-	background-color: #6600cc;
 	border : solid 1px #ffffff;
-	color: #ffffff;
+	color: #000000;
 }
 
 /********* Grid Hebergement Images *********/
 
 .gridheb {
 	grid-column: 1 / span 3;
-	background-color: #ff0000;
 	border : solid 1px #ffffff;
-	color: #ffffff;
+	color: #000000;
 }
+
 
 /* .box1 heb */
 .box1 {
 	border-radius: 10px;
-	display: grid;
+
 	grid-template-columns: 1fr ;
 	grid-template-rows: 375px;
-	background-color: #C9C2CC;
-	margin: 10px
+	background-color: #EAE4E2;
+	margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
 }
 
 /********* Grid Populaires Images *********/
 
 .gridpop {
 	grid-column: 4 / span 5;
-	background-color: #009933;
 	border : solid 1px #ffffff;
-	color: #ffffff;
+	color: #000000;
 }
 
 /* .box2 pop */
@@ -71,22 +80,161 @@ body {
 	display: grid;
 	grid-template-columns: 1fr ;
 	grid-template-rows: 375px;
-	background-color: #C9C2CC;
+	background-color: #EAE4E2;
 	margin: 10px
 }
+
 /********* Grid Activités Images *********/
 
 .gridact {
 	grid-column: 1 / span 5;
-	background-color: #ff99cc;
 	border : solid 1px #ffffff;
-	color: #ffffff;	
+	color: #000000;	
+		background-color: white;
 }
 /********* Grid Footer *********/
 
 .gridfooter {
 	grid-column: 1 / span 5;
-	background-color: #ffff00;
+	background-color: #EAE4E2;
 	border : solid 1px #ffffff;
 	color: #000000;	
 }
+
+.boxFooter {
+	display: flex;
+}
+
+.minibox1{
+	border-radius: 10px;
+	display: grid;
+	width: 250px;
+	grid-template-columns: 2fr ;
+	grid-template-rows: 250px;
+	background-color: #EAE4E2;
+	margin: 10px
+}
+
+.minibox2{ 		
+	border-radius: 10px;
+	display: grid;
+	width: 250px;
+	grid-template-columns: 5fr ;
+	grid-template-rows: 250px;
+	background-color: #EAE4E2;
+	margin: 10px
+}
+
+.minibox3{ 		
+	border-radius: 10px;
+	display: grid;
+	width: 250px;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 250px;
+	background-color: #EAE4E2;
+	margin: 10px
+}
+/**************** Navigation Barre ****************/ 
+
+a {
+	text-decoration: none;
+	color: #0065FC;
+}
+
+nav { 
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+a:hover {
+	text-decoration: overline;
+	color: #0065FC;
+}
+
+a:active {
+	font-weight:bold;
+}
+
+
+/************ Barre de recherche ************/
+
+/*.searchFormIcon {
+	background-color: #F2F2F2
+	padding: 1rem 1.25rem;
+	border-radius: 1rem 0 0 1rem;
+	text-align: center;
+} */  
+
+.searchFormInput {
+	border-right: none;
+	border-left: none;
+	border-top: #F2F2F2 1px solid;
+	border-bottom: #F2F2F2 1px solid;
+	padding: 0 1.5rem;
+	box-sizing: border-box;
+	width: 15rem;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: "Raleway", "Sans serif";
+}
+
+.searchFormButton {
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+	font-family: "Raleway", "Sans serif";
+	font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/**************** Filtres ****************/
+
+.contentFilter {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.h2{
+	font-weight: bold;
+}
+
+.searchFilters {
+    display: flex;
+    align-items: center;
+	border: 2px solid #d9d9d9;
+	border-radius: 2rem;
+	margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+	font-weight: bold;
+}
+
+.filtersIcon {
+    background-color: #ccd8eb;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: -2px;
+	color: blue;
+}
+
+/**************** Article heb ****************/
+
+/**************** Article pop ****************/
+
+/**************** Article act ****************/
+
+/**************** Footer ****************/ 
+

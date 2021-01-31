@@ -1,28 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css" />
-	<title>Maquette Test</title>
+	<link rel="stylesheet" href="test.css" />
+	<script src="https://kit.fontawesome.com/0c2a8c50d5.js" crossorigin="anonymous"></script>
+	<title>Réservia</title>
 </head>
+
 <body>
-
-    <div class="grid">
-		<div class="gridlogo"> Logo</div>
-		<div class="gridnav">Barre de navigation </div>	
-		<div class="gridtext"> H1 </br> Paragraphe </br> Barre de recherche </br> Filtres a + a + a + a  </br> Img + Paragraphe </br></div>
-		<div class="gridheb">
-			<div class="box1">Hébergement à Marseille
-
-			</div> 
+	<!------------- Header -------------->
+	<div class="grid">
+		<!--- Logo ---->		
+		<div class="gridlogo"> 			
+			<img src="public/img/logo.jpg" alt="Logo Réservia">
 		</div>
-		<div class="gridpop">
-			<div class="box2">	Les plus populaires
+
+		<!--- BarNav ---->
+		<div class="gridnav">
+			<nav>
+					<a href="#heb">Hébergements</a>
+					<a href="#act">Activités</a>
+					<a href="#">S'inscrire</a>
+			</nav>
+		</div>	
+		<!--- texte ---->		
+		<div class="gridtext"> 
+			<section id="content">
+				<div class="find">
+					<h1>Trouver votre hébergement pour des vacances de rêve</h1>
+					<p>En plein centre ville ou en pleine nature</p>
+					<!------ Barre de recherche ------->
+					<form class="searchForm" action="proceedFrom.html" method="GET">
+						<span class="searchFormIcon">
+							<i class="fas fa-map-marker-alt"></i>
+						</span>
+						<input class="searchFormInput" type="search" placeholder="Marseille, France" size="1">
+						<button class="searchFormButton">
+							<span class="searchFormButtoninput">Rechercher</span>
+						</button>
+					</form>
+							<!--- Filtres ---->
+				<div class="contentFilter"
+					<h2 class="filters"> Filtres</h2> 
+						<div class="searchFilters">
+							<div class="filtersIcon">
+							<i class="fas fa-money-bill-wave"></i></div>
+							<span class="filter">Économique</span></div>
+						<div class="searchFilters">
+							<div class="filtersIcon">
+							<i class="fas fa-child"></i></div>
+							<span class="filter">Familial</span></div>	
+						<div class="searchFilters">
+							<div class="filtersIcon">
+							<i class="fas fa-heart"></i></div>
+						<span class="filter">Romantique</span></div>	
+						<div class="searchFilters">
+							<div class="filtersIcon">
+							<i class="fas fa-dog"></i></div>
+						<span class="filter">Animaux autorisés</span></div>	
+					</div>
+						<p>Plus de 500 logements sont disponibles dans cette ville</p>
+					</div>
+				</section>
+			</div>
+
+			<!--- Hébergement ---->			
+			<div class="gridheb">
+				<div class="box1">
+
+					<article class="heb">
+						<p>Hébergements à Marseille</p></br>
+						<img src="public/img/mini-chambre1.jpg" alt="Vue de chambre 1" />
+						<img src="public/img/mini-chambre2.jpg" alt="Vue de chambre 2" />
+						<img src="public/img/mini-chambre3.jpg" alt="Vue de chambre 3" />
+						<img src="public/img/mini-chambre4.jpg" alt="Vue de chambre 4" />
+						<img src="public/img/mini-chambre5.jpg" alt="Vue de chambre 5" />
+						<img src="public/img/mini-chambre6.jpg" alt="Vue de chambre 6" />
+
+					</article>
+				</div>
+			</div>
+
+
+
+			<!--- Populaires ---->
+			<div class="gridpop">
+				<div class="box2">
+					<article class="pop">
+						Les plus populaires
+					</article>
+				</div>
+			</div>
+			<!--- Activités ---->
+			<div class="gridact">    
+				<article class="act">
+					Activités à Marseille
+				</article>
+			</div>
+
+			<!------------- Footer -------------->
+			<div class="gridfooter">
+				<div class="boxFooter"> 
+					<div class="minibox1">
+						<div class="col1">A propos
+						<ul>
+							<li>Fonctionnement du site</li>
+							<li>Conditions générales de vente</li>
+							<li>Données et confidentialité</li>
+						</ul>
+					</div>
+				</div>
+
+					<div class="minibox2">
+						<div class="col2">Nos hébergements
+							<ul>
+								<li>Charte qualité</li>
+								<li>Soumettre votre hôtel</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="minibox2">
+						<div class="col3">Assistance
+							<ul>
+								<li>Centre d'aide</li>
+								<li>Nous contacter</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
 			</div>
 		</div>
-		<div class="gridact">Activités à Marseille</div>
-		<div class="gridfooter">Footer</div>
 	</div>
-
-
-</body>
-</html>
+	</body>
+	</html>
