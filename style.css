@@ -1,0 +1,92 @@
+body {
+	margin:0;
+	padding: 0;
+}
+
+/************** Grid **************/
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+	grid-template-rows: 75px 200px 400px 300px 200px;
+}
+/************** Grid Logo **************/
+
+.gridlogo {
+	grid-column-start: 1;
+	background-color: #000000;
+	border : solid 1px #ffffff;
+	color: #ffffff;
+}
+
+/************** Grid Navigation **************/
+
+.gridnav {
+	grid-column: 2 / span 5;
+	background-color: #ff9933;
+	border : solid 1px #ffffff;
+	color: #ffffff;
+}
+
+/********** Grid texte **********/
+
+.gridtext {
+	grid-column: 1 / span 5;
+	background-color: #6600cc;
+	border : solid 1px #ffffff;
+	color: #ffffff;
+}
+
+/********* Grid Hebergement Images *********/
+
+.gridheb {
+	grid-column: 1 / span 3;
+	background-color: #ff0000;
+	border : solid 1px #ffffff;
+	color: #ffffff;
+}
+
+/* .box1 heb */
+.box1 {
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 375px;
+	background-color: #C9C2CC;
+	margin: 10px
+}
+
+/********* Grid Populaires Images *********/
+
+.gridpop {
+	grid-column: 4 / span 5;
+	background-color: #009933;
+	border : solid 1px #ffffff;
+	color: #ffffff;
+}
+
+/* .box2 pop */
+.box2 {
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 375px;
+	background-color: #C9C2CC;
+	margin: 10px
+}
+/********* Grid Activités Images *********/
+
+.gridact {
+	grid-column: 1 / span 5;
+	background-color: #ff99cc;
+	border : solid 1px #ffffff;
+	color: #ffffff;	
+}
+/********* Grid Footer *********/
+
+.gridfooter {
+	grid-column: 1 / span 5;
+	background-color: #ffff00;
+	border : solid 1px #ffffff;
+	color: #000000;	
+}
