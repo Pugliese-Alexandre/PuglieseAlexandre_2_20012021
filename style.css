@@ -3,7 +3,7 @@
 @font-face {
 	font-family: 'ralewayregular';
 	src: url('public/font/raleway-regular.woff2') format('woff2'),
-	url('public/font/raleway-regular.woff') format('woff');
+		url('public/font/raleway-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -11,17 +11,17 @@
 
 body {
 	font-family: 'ralewayregular';
-	margin:0;
+	margin: 0;
 	padding: 0;
 	margin-left: 3%;
-    margin-right: 3%;
+	margin-right: 3%;
 }
 
 /************** Grid **************/
 
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 75px auto auto auto;
 }
 
@@ -36,9 +36,9 @@ body {
 
 #navmenu {
 	grid-column: 5 / span 5;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
 }
 
 a {
@@ -46,7 +46,7 @@ a {
 	color: black;
 }
 
-nav { 
+nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -59,46 +59,46 @@ a:hover {
 }
 
 a:active {
-	font-weight:bold;
+	font-weight: bold;
 }
 
 /************ Barre de recherche ************/
 
 .searchFormIcon {
-background-color: #F2F2F2;
-padding: 1rem 1.25rem;
-border-radius: 1rem 0 0 1rem;
-text-align: center;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-padding: 12px;
+	background-color: #F2F2F2;
+	padding: 1rem 1.25rem;
+	border-radius: 1rem 0 0 1rem;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 12px;
 }
 
 .searchFormInput {
-border-right: none;
-border-left: none;
-border-top: #F2F2F2 1px solid;
-border-bottom: #F2F2F2 1px solid;
-padding: 10px;
-box-sizing: border-box;
-width: 15rem;
-font-size: 1rem;
-font-weight: bold;
-font-family: "Raleway", "Sans serif";
+	border-right: none;
+	border-left: none;
+	border-top: #F2F2F2 1px solid;
+	border-bottom: #F2F2F2 1px solid;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 15rem;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: "Raleway", "Sans serif";
 }
 
 .searchFormButton {
-    display: inline-block;
-background-color: #0065FC;
-color: white;
-border: 1px solid transparent;
-border-radius: 0 1rem 1rem 0;
-padding: .375rem .75rem;
-font-family: "Raleway", "Sans serif";
-font-weight: bold;
-font-size: 1rem;
-cursor: pointer;
-line-height: 1.5;
+	display: inline-block;
+	background-color: #0065FC;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 0 1rem 1rem 0;
+	padding: .375rem .75rem;
+	font-family: "Raleway", "Sans serif";
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+	line-height: 1.5;
 }
 
 /**************** Filtres ****************/
@@ -110,33 +110,38 @@ line-height: 1.5;
 	margin-bottom: 35px;
 }
 
-.h2{
+.h2 {
 	font-weight: bold;
 }
 
 .searchFilters {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 	border: 2px solid #d9d9d9;
 	border-radius: 2rem;
 	margin-bottom: 1rem;
-    cursor: pointer;
-    transition-duration: 0.1s;
+	cursor: pointer;
+	transition-duration: 0.1s;
 	font-weight: bold;
+	margin: 1em;
 }
 
+.filter {
+	margin-right: 1em;
+}
 .filtersIcon {
-    background-color: #ccd8eb;
-    border-radius: 100%;
-    height: 3rem;
-    width: 3rem;
-    min-height: 3.5rem;
-    min-width: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	background-color: #ccd8eb;
+	border-radius: 100%;
+	height: 3rem;
+	width: 3rem;
+	min-height: 3.5rem;
+	min-width: 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin: -2px;
 	color: blue;
+	margin-right: 1em;
 }
 
 
@@ -144,20 +149,24 @@ line-height: 1.5;
 
 .content {
 	display: flex;
+
 }
 
 /* Article hébergements */
 
-.content {
+.hosting {
 	display: flex;
 }
+
 .heb {
-	justify-content: flex-start;
-	width: auto;
+	width: 55%;
 	border-radius: 10px;
 	background-color: #F2F2F2;
-	margin: 10px
-}
+	margin: 10px;
+	padding-right: 5em;
+	padding-left: 2em;
+	margin-right: auto;
+	}
 
 .heb a {
 	text-decoration: none;
@@ -165,16 +174,20 @@ line-height: 1.5;
 }
 
 .showMore:hover {
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.425);
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.425);
 }
 
 /* Article Populaires */
 .pop {
-	width: 400px;
+	width: 35%;
 	border-radius: 10px;
 	background-color: #F2F2F2;
-	margin: 10px
+	margin: 10px;
+	padding-right: 5em;
+	padding-left: 2em;
+	margin-right: auto;
+	
 }
 
 .pop a {
@@ -182,18 +195,43 @@ line-height: 1.5;
 	color: black;
 }
 
-.pop, #popular-logo {
+.pop,
+#popular-logo {
 	margin-left: 10em;
 }
 
 /* Article Activité */
 
+.act {
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em
+}
 
-
-/**************** Footer ****************/ 
+/**************** Footer ****************/
 
 #footer {
-		background-color: #F2F2F2;
+	background-color: #F2F2F2;
+	padding-left: 2em;
+	padding-top: 2em;
+	flex-direction: column;
+}
+
+#fotter h3 {
+	font-weight: bold;
+}
+
+#footer ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#footer li {
+	display: list-item;
+	list-style: none;
+	line-height: 2;
 }
 
 
@@ -201,17 +239,17 @@ line-height: 1.5;
 /* Stars */
 
 .blue {
-    color: #0065FC;
+	color: #0065FC;
 }
 
 .FFFFFF {
-    color: #FFFFFF;
+	color: #FFFFFF;
 }
 
 .afb8c7 {
-    color: #afb8c7;
+	color: #afb8c7;
 }
 
 .i-logo {
-    margin-right: 1em;
+	margin-right: 1em;
 }
