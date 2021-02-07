@@ -38,12 +38,21 @@ body {
 	grid-column: 5 / span 5;
 	text-decoration: none;
 	color: black;
-	font-weight: bold;
+	padding-top: 30px;
+}
+
+li {
+	display: flex;
+}
+
+.sub-nav {
+    color: #0065fc;
 }
 
 a {
 	text-decoration: none;
 	color: black;
+	
 }
 
 nav {
@@ -53,9 +62,10 @@ nav {
 }
 
 
-a:hover {
-	text-decoration: overline;
-	color: #0065FC;
+.heb-nav:hover,.act-nav:hover,.sub-nav:hover {
+	color: #0065fc;
+	border-top: 2px solid #0065fc;
+	padding-top: 30px;
 }
 
 a:active {
@@ -144,6 +154,10 @@ a:active {
 	margin-right: 1em;
 }
 
+.searchFilters:hover {
+    cursor: pointer;
+    background-color: #DEEBFF;
+}
 
 /**************** Section ****************/
 
@@ -158,7 +172,21 @@ a:active {
 	display: flex;
 }
 
+.heb, h1{
+	display: block;
+	width: 100%;
+    font-size: 1.2em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 .heb {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	width: 55%;
 	border-radius: 10px;
 	background-color: #F2F2F2;
@@ -178,6 +206,36 @@ a:active {
 	color: rgba(0, 0, 0, 0.425);
 }
 
+.figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.figure-hebergement {
+	width: 250px;
+    padding: 4px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px;
+    box-shadow: 2px 1px 5px 2px rgb(209 209 209);
+}
+
+.heb-chambre {
+    width: 249px;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+
+.hosting:hover {
+    transform: scale(1.05)
+}
 /* Article Populaires */
 .pop {
 	width: 35%;
@@ -187,7 +245,6 @@ a:active {
 	padding-right: 5em;
 	padding-left: 2em;
 	margin-right: auto;
-	
 }
 
 .pop a {
@@ -195,11 +252,19 @@ a:active {
 	color: black;
 }
 
+.pop, h1 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .pop,
 #popular-logo {
 	margin-left: 10em;
 }
 
+.popular:hover {
+    transform: scale(1.05)
+}
 /* Article Activité */
 
 .act {
