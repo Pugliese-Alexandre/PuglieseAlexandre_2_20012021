@@ -484,16 +484,83 @@ h3 {
 
 /************ Media Queries ************/
 
-/* Small devices (téléphone, 576 et plus)*/
+/******* Small devices (téléphone, 576 et plus) *******/
 @media screen and (max-width: 576px) { 
 
+	/* Header Media */
+	.heb-nav, .act-nav {
+		display: inline-block;
+	}
 
-/* Medium devices (tablette, 768px et plus)*/
+	
+
+	/* Section Media */
+	.content {
+		display: block;
+		margin: 0;
+	}
+
+	/* Hebergement Media */
+	.heb {
+		display: block;
+		width: 100%;
+		background-color: white;
+		margin:0 ;
+		padding-right: 1em; 
+		padding-left: 1em;
+	}
+
+	.figure-hebergement {
+		margin: 0 ;
+		display: flex;
+		width: 550px;
+		height: 185px;
+	}
+
+	.heb-picture {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.heb-chambre {
+		width: 190px;
+		height: 185px;
+		border-radius: 20px 0 0 20px;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+	/* Populaires Media */
+	.pop {
+		display: block;
+		width: 93%;
+		height: 740px;
+	}
+
+	.figure-populaires {
+		display: flex;
+		width: 550px;
+		height: 185px;
+	}
+
+	.pop-chambre {
+		width: 190px;
+		height: 185px;
+		border-radius: 20px 0 0 20px;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+	/* Activités Media */
+
+
+
+/****** Medium devices (tablette, 768px et plus) ******/
 @media screen and (max-width: 768px) { 
 	
 }
 
-/* Large devices (ecran, 992px et plus)*/
+/****** Large devices (ecran, 992px et plus) ******/
 @media screen and (max-width: 992px) { 
 
  }
