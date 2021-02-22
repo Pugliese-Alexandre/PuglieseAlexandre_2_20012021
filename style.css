@@ -9,12 +9,6 @@
 
 }
 
-/* body {
-	font-family: 'ralewayregular';
-	margin: 0% 6% 0% 6%;
-	padding: 0;
-} */
-
 body, header, .gridtext, .content, .container {
 	font-family: 'ralewayregular';
 	margin: 0% 6% 0% 6%;
@@ -22,7 +16,7 @@ body, header, .gridtext, .content, .container {
 
 body, footer {
 	font-family: 'ralewayregular';
-	margin: 0%;
+	margin: 0;
 }
 
 /************** Grid **************/
@@ -49,8 +43,13 @@ body, footer {
 	padding-top: 30px;
 }
 
-li {
+ul {
 	display: flex;
+	list-style-type: none;
+}
+
+li {
+	margin-right: 1rem;
 }
 
 .sub-nav {
@@ -488,15 +487,37 @@ h3 {
 @media screen and (max-width: 576px) { 
 
 	/* Header Media */
-	.heb-nav, .act-nav {
-		display: inline-block;
+
+
+	.gridlogo{
+		position: relative;
 	}
 
-	
+	.sub-nav {
+		position: absolute;
+		right: 10%;
+	}
+
+	.heb-nav {
+		display: flex;
+	}
+
+	/* Filtre Media */
+
+	.contentFilter {
+		display: flex;
+		flex-wrap: wrap;
+	}	
 
 	/* Section Media */
 	.content {
-		display: block;
+		display: flex;
+		flex-direction: column-reverse;
+		margin: 0;
+	}
+
+	.container {
+		width: 82%;
 		margin: 0;
 	}
 
@@ -513,8 +534,8 @@ h3 {
 	.figure-hebergement {
 		margin: 0 ;
 		display: flex;
-		width: 550px;
-		height: 185px;
+		width: 85%;
+		height: 195px;
 	}
 
 	.heb-picture {
@@ -523,36 +544,72 @@ h3 {
 	}
 
 	.heb-chambre {
-		width: 190px;
-		height: 185px;
-		border-radius: 20px 0 0 20px;
+		width: 100%;
+		height: 116px;
+		border-radius: 20px 20px 0 0px;
 		-o-object-fit: cover;
 		object-fit: cover;
+	}
+
+	.figure-hebergement {
+		display: block;
+		margin-bottom: 1rem;
 	}
 
 	/* Populaires Media */
 	.pop {
 		display: block;
-		width: 93%;
+		width: 80%;
 		height: 740px;
+		padding-right: 1.8em;
+        padding-left: 1.8em;
+	}
+
+	.popular{
+		margin-bottom: 2em;
 	}
 
 	.figure-populaires {
 		display: flex;
-		width: 550px;
+		width: 120%;
 		height: 185px;
+		margin: 6%;
 	}
 
 	.pop-chambre {
-		width: 190px;
+		width: 45%;
 		height: 185px;
 		border-radius: 20px 0 0 20px;
 		-o-object-fit: cover;
 		object-fit: cover;
 	}
 
+	.pop-text {
+		margin: 5%;
+	}
+
 	/* Activités Media */
 
+	.activity {
+		display: block;
+	}
+	
+	.activitybox {
+		display: flex;
+		width: 550px;
+		height: 185px;
+		margin-bottom: 2rem;
+	}
+
+	/* Footer Media */
+	.footerBox {
+		display: block;
+	}
+
+	.category {
+		width: auto;
+		padding: 1rem 1rem;
+	}
 
 
 /****** Medium devices (tablette, 768px et plus) ******/
