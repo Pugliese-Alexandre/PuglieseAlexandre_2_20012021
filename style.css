@@ -498,7 +498,7 @@ h3 {
 		right: 10%;
 	}
 
-	.heb-nav {
+	.grid {
 		display: flex;
 	}
 
@@ -508,6 +508,14 @@ h3 {
 		display: flex;
 		flex-wrap: wrap;
 	}	
+
+	.filters { 
+		width: 100%;
+	}
+
+	.searchFilters { 
+	font-weight: bold;
+}
 
 	/* Section Media */
 	.content {
@@ -552,9 +560,16 @@ h3 {
 	}
 
 	.figure-hebergement {
-		display: block;
+		display: flex;
+		width: 85%;
+		flex-wrap: wrap;
 		margin-bottom: 1rem;
 	}
+	
+	.figcaption-heb {
+		width: 100%;
+	}
+
 
 	/* Populaires Media */
 	.pop {
@@ -596,7 +611,7 @@ h3 {
 	
 	.activitybox {
 		display: flex;
-		width: 550px;
+		width: 110%;
 		height: 185px;
 		margin-bottom: 2rem;
 	}
