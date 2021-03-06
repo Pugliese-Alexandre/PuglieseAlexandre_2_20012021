@@ -9,12 +9,17 @@
 
 }
 
-body, header, .gridtext, .content, .container {
+body,
+header,
+.gridtext,
+.content,
+.container {
 	font-family: 'ralewayregular';
 	margin: 0% 6% 0% 6%;
 }
 
-body, footer {
+body,
+footer {
 	font-family: 'ralewayregular';
 	margin: 0;
 }
@@ -118,6 +123,10 @@ a:active {
 	font-size: 1rem;
 	cursor: pointer;
 	line-height: 1.5;
+}
+
+.searchFormSubmitinputIcon {
+	visibility: hidden
 }
 
 /**************** Filtres ****************/
@@ -278,7 +287,7 @@ h1 {
 
 .pop-text {
 	display: flex;
-	justify-content: space-between ;
+	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
 	width: 100%;
@@ -333,7 +342,7 @@ h1 {
 .act,
 h3 {
 	font-size: 1.1rem;
-	margin: 1.5rem ;
+	margin: 1.5rem;
 }
 
 .activity {
@@ -377,23 +386,24 @@ h3 {
 
 /***** Texte en dessous des photos Heb *****/
 
-.hosting, .title {
+.hosting,
+.title {
 	font-weight: bold;
-    font-size: 1.1rem;
-	margin-left: 10px;	
+	font-size: 1.1rem;
+	margin-left: 10px;
 }
 
 .details {
-    margin-left: 10px;
-	font-weight:normal;
+	margin-left: 10px;
+	font-weight: normal;
 	margin-top: 5px;
 }
 
 /***** Texte en dessous des photos Pop *****/
 
 .details-pop {
-    margin-left: 10px;
-	font-weight:normal;
+	margin-left: 10px;
+	font-weight: normal;
 	margin-bottom: 2em;
 	margin-top: 5px;
 }
@@ -483,41 +493,82 @@ h3 {
 
 /************ Media Queries ************/
 
-/******* Small devices (téléphone, 576 et plus) *******/
-@media screen and (max-width: 576px) { 
-
+/******* Small devices *******/
+@media screen and (max-width: 576px) 
+{
 	/* Header Media */
 
-
-	.gridlogo{
+	.grid {
 		position: relative;
+		display: flex;
 	}
 
 	.sub-nav {
 		position: absolute;
 		right: 10%;
+		top: 50%;
 	}
 
-	.grid {
+	.liHeb {
+		position: absolute;
 		display: flex;
+		bottom: -50%;
+		right: 60%;
+		border-bottom: 3px solid #F2F2F2;
+		
 	}
 
+	.liAct {
+		position: absolute;
+		display: flex;
+		bottom: -50%;
+		right: 20%;
+		border-bottom: 3px solid #F2F2F2;
+	}
+
+	.heb-nav:hover,
+	.act-nav:hover,
+	.sub-nav:hover {
+			color: #0065fc;
+			border-bottom-color: #0065FC;
+			border-top: none;
+			padding-top: 0;
+		}
+		
+
+	.gridtext {
+		margin-top: 10%;
+	}
 	/* Filtre Media */
 
 	.contentFilter {
 		display: flex;
 		flex-wrap: wrap;
-	}	
+		width: 80%;
+	}
 
-	.filters { 
+	.filters {
 		width: 100%;
 	}
 
-	.searchFilters { 
-	font-weight: bold;
-}
+	.searchFilters {
+		font-weight: bold;
+	}
+
+	.searchFormButtoninput {
+		display: none;
+	}
+
+	.searchFormSubmitinputIcon {
+		visibility: visible;
+	}
+
+	.searchFormInput {
+		width: 80%;
+	}
 
 	/* Section Media */
+
 	.content {
 		display: flex;
 		flex-direction: column-reverse;
@@ -534,21 +585,24 @@ h3 {
 		display: block;
 		width: 100%;
 		background-color: white;
-		margin:0 ;
-		padding-right: 1em; 
+		margin: 0;
+		padding-right: 1em;
 		padding-left: 1em;
+		box-sizing: border-box;
 	}
 
 	.figure-hebergement {
-		margin: 0 ;
+		margin: 0;
 		display: flex;
-		width: 85%;
+		width: 90%;
 		height: 195px;
+		margin-left: 5%;
 	}
 
 	.heb-picture {
 		display: flex;
 		flex-direction: column;
+		margin: 0;
 	}
 
 	.heb-chambre {
@@ -565,7 +619,7 @@ h3 {
 		flex-wrap: wrap;
 		margin-bottom: 1rem;
 	}
-	
+
 	.figcaption-heb {
 		width: 100%;
 	}
@@ -574,26 +628,28 @@ h3 {
 	/* Populaires Media */
 	.pop {
 		display: block;
-		width: 80%;
-		height: 740px;
+		width: 90%;
 		padding-right: 1.8em;
-        padding-left: 1.8em;
+		padding-left: 1.8em;
+		margin-left: 5%;
+		box-sizing: border-box;
 	}
 
-	.popular{
+	.popular {
 		margin-bottom: 2em;
+		width: 100%;
 	}
 
 	.figure-populaires {
 		display: flex;
-		width: 120%;
-		height: 185px;
-		margin: 6%;
+		width: 100%;
+		height: 100%;
+		margin: 0;
 	}
 
 	.pop-chambre {
 		width: 45%;
-		height: 185px;
+		height: 100%;
 		border-radius: 20px 0 0 20px;
 		-o-object-fit: cover;
 		object-fit: cover;
@@ -605,13 +661,19 @@ h3 {
 
 	/* Activités Media */
 
+	.act {
+		width: 100%;
+	}
+
 	.activity {
 		display: block;
+		margin-left: 5%;
+		width: 100%;
 	}
-	
+
 	.activitybox {
 		display: flex;
-		width: 110%;
+		width: 100%;
 		height: 185px;
 		margin-bottom: 2rem;
 	}
@@ -626,17 +688,183 @@ h3 {
 		padding: 1rem 1rem;
 	}
 
-
-/****** Medium devices (tablette, 768px et plus) ******/
-@media screen and (max-width: 768px) { 
-	
 }
 
-/****** Large devices (ecran, 992px et plus) ******/
-@media screen and (max-width: 992px) { 
+/****** Medium devices ******/
+@media screen and (min-width: 577px) and (max-width: 768px) 
+{
+	/* Header Tablette */
 
- }
+	.contentFilter {
+		flex-wrap: nowrap;
+	}
 
- @media screen and (max-width: 1200px) { 
+	.filters {
+		display: block;
+		width: 100%;
+	}
 
- }
+	.searchFilters {
+		margin: 0.3em;
+	}
+
+
+	/* Section Heb Tab */
+
+	.content {
+		display: block;
+	}
+
+	.heb {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+		margin-right: 0;
+	}
+
+
+	.heb-picture {
+		justify-content: space-around;
+	}
+
+	.showMore {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	/* Section Pop Tab */
+
+	.pop {
+		width: 100%;
+		height: 750px;
+		padding-right: 0;
+		padding-left: 0;
+		background-color: white;
+	}
+
+	.popular {
+		display: flex;
+		margin-bottom: 2em;
+		padding-left: 2em;
+	}
+
+
+	.figure-populaires {
+		display: flex;
+		width: 150%;
+		height: 185px;
+		margin: 6%;
+	}
+
+	.pop-chambre {
+		width: 45%;
+		height: 185px;
+		border-radius: 20px 0 0 20px;
+	}
+
+	/* Section Act Tab */
+
+	.activity {
+		display: block;
+	}
+
+	.activitybox {
+		display: flex;
+		width: 100%;
+		height: 185px;
+		margin-bottom: 2rem;
+	}
+
+}
+
+/****** Large devices ******/
+@media screen and (min-width: 769px) and (max-width: 992px) 
+{
+.content {
+	display: block;
+}
+
+.heb {
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+}
+
+
+	.pop {
+		width: 100%;
+		height: 750px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.popular {
+		width: 40%;
+		display: flex;
+		margin-bottom: 2em;
+		padding-left: 4em;
+	}
+
+
+	.figure-populaires {
+		display: flex;
+		width: 150%;
+		height: 185px;
+		margin-left: 30%;
+
+	}
+
+	.pop-chambre {
+		width: 45%;
+		height: 185px;
+		border-radius: 20px 0 0 20px;
+	}
+
+}
+
+
+/****** X-Large devices ******/
+@media screen and (min-width: 993px) and (max-width: 1200px) 
+{
+.content {
+	display: block;
+}
+
+.heb {
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+}
+
+
+	.pop {
+		width: 100%;
+		height: 750px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.popular {
+		display: flex;
+		margin-bottom: 2em;
+		padding-left: 2em;
+	}
+
+
+	.figure-populaires {
+		display: flex;
+		width: 150%;
+		height: 185px;
+		margin-left: 58%;
+
+	}
+
+	.pop-chambre {
+		width: 45%;
+		height: 185px;
+		border-radius: 20px 0 0 20px;
+	}
+
+}

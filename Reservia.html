@@ -12,19 +12,19 @@
 <body>
 	<!------------- Header -------------->
 	<header class="grid">
-			<!--- Logo ---->
-			<div class="gridlogo">
-				<img src="public/img/logo.jpg" alt="Logo Réservia">
-			</div>
+		<!--- Logo ---->
+		<div class="gridlogo">
+			<img src="public/img/logo.jpg" alt="Logo Réservia">
+		</div>
 
-			<!--- BarNav ---->
-			<nav id="navmenu">
-				<ul class="li-nav">
-					<li><a href="#" class="heb-nav">Hébergements</a></li>
-					<li><a href="#" class="act-nav">Activités</a></li>
-					<li><a href="#" class="sub-nav">S'inscrire</a></li>
-				</ul>
-			</nav>
+		<!--- BarNav ---->
+		<nav id="navmenu">
+			<ul class="ul-nav">
+				<li class="liHeb"><a href="#" class="heb-nav">Hébergements</a></li>
+				<li class="liAct"><a href="#" class="act-nav">Activités</a></li>
+				<li><a href="#" class="sub-nav">S'inscrire</a></li>
+			</ul>
+		</nav>
 	</header>
 	<!--- texte ---->
 	<section class="gridtext">
@@ -33,11 +33,12 @@
 		<!------ Barre de recherche ------->
 		<form class="searchForm" action="proceedFrom.html" method="GET">
 			<span class="searchFormIcon">
-				<i class="fas fa-map-marker-alt"></i>
+				<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
 			</span>
 			<input class="searchFormInput" type="search" placeholder="Marseille, France" size="1">
 			<button class="searchFormButton">
 				<span class="searchFormButtoninput">Rechercher</span>
+				<i class="searchFormSubmitinputIcon fas fa-search" aria-hidden="true"></i>
 			</button>
 		</form>
 		<!--- Filtres ---->
@@ -161,7 +162,8 @@
 								<div class="title bold">Hôtel chez Amina</div>
 								<div class="details"> Nuit à partir de 96€</div>
 								<div class="details blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-										class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+										class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+								</div>
 							</figcaption>
 						</figure>
 					</a>
