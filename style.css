@@ -57,7 +57,7 @@ li {
 	margin-right: 1rem;
 }
 
-.sub-nav {
+.sub-nav a {
 	color: #0065fc;
 }
 
@@ -497,46 +497,65 @@ h3 {
 @media screen and (max-width: 576px) {
 	/* Header Media */
 
+	.gridlogo {
+		padding-left: 2rem;
+	}
+
 	.grid {
 		position: relative;
 		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+	}
+
+	.gridtext h1 {
+		width: 80%;
+		font-size: 1.7em;
+	}
+
+	.gridtext p {
+		font-size: 1.19em;
+	}
+
+	.ul-nav {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	#navmenu {
+		padding-top: 0;
 	}
 
 	.sub-nav {
 		position: absolute;
-		right: 10%;
-		top: 50%;
+		right: 5%;
+		top: 20%;
+		font-weight: bold;
 	}
 
-	.liHeb {
-		position: absolute;
-		display: flex;
-		bottom: -50%;
-		right: 60%;
-		border-bottom: 3px solid #F2F2F2;
-
-	}
-
+	.liHeb,
 	.liAct {
-		position: absolute;
-		display: flex;
-		bottom: -50%;
-		right: 20%;
 		border-bottom: 3px solid #F2F2F2;
+		font-weight: bold;
+		width: 50%;
+		text-align: center;
+		margin-right: 0;
+		padding: 10px;
 	}
 
 	.heb-nav:hover,
 	.act-nav:hover,
 	.sub-nav:hover {
 		color: #0065fc;
-		border-bottom-color: #0065FC;
+		border-bottom-color: 3px solid #0065fc;
 		border-top: none;
 		padding-top: 0;
 	}
 
-
-	.gridtext {
-		margin-top: 10%;
+	.liHeb:hover:active,
+	.liAct:hover:active {
+		border-bottom-color: #0065FC;
 	}
 
 	/* Filtre Media */
@@ -545,6 +564,8 @@ h3 {
 		display: flex;
 		flex-wrap: wrap;
 		width: 80%;
+		margin-top: 1.5em;
+		margin-bottom: 0;
 	}
 
 	.filters {
@@ -565,6 +586,10 @@ h3 {
 
 	.searchFormInput {
 		width: 80%;
+	}
+
+	.searchFormButton {
+		border-radius: 10px;
 	}
 
 	/* Section Media */
@@ -694,27 +719,13 @@ h3 {
 @media screen and (min-width: 577px) and (max-width: 768px) {
 	/* Header Tablette */
 
-	.gridtext {
-		position: relative;
-
+	.gridlogo {
+		align-self: center;
 	}
 
-	.sub-nav {
-		position: absolute;
-		right: 6%;
-		top: 2%;
-	}
-
-	.liAct {
-		position: absolute;
-		right: 14%;
-		top: 2%;
-	}
-
-	.liHeb {
-		position: absolute;
-		right: 24%;
-		top: 2%;
+	#navmenu {
+		grid-column: 3 / span 5;
+		padding-top: 0;
 	}
 
 	.contentFilter {
@@ -802,29 +813,15 @@ h3 {
 /****** Large devices ******/
 @media screen and (min-width: 769px) and (max-width: 992px) {
 
-	.gridtext {
-		position: relative;
 
+	.gridlogo {
+		align-self: center;
 	}
 
-	.sub-nav {
-		position: absolute;
-		right: 6%;
-		top: 5%;
+	#navmenu {
+		grid-column: 3 / span 5;
+		padding-top: 0;
 	}
-
-	.liAct {
-		position: absolute;
-		right: 14%;
-		top: 5%;
-	}
-
-	.liHeb {
-		position: absolute;
-		right: 24%;
-		top: 5%;
-	}
-
 
 	.content {
 		display: block;
